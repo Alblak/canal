@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canal+ Afrique</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:black;
+position:fixed;
+width:100%;
+top:0;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+background:white;
+color:black;
+padding:8px 15px;
+border-radius:5px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(
+rgba(0,0,0,.7),
+rgba(0,0,0,.8)
+),
+url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:600px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+padding:15px 30px;
+background:white;
+color:black;
+font-weight:bold;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* OFFRES */
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#222;
+padding:30px;
+border-radius:10px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.price{
+font-size:35px;
+font-weight:bold;
+margin:20px 0;
+}
+
+/* CHAÎNES */
+
+.channels{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.channel{
+background:black;
+padding:20px;
+border-radius:10px;
+width:180px;
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+padding:30px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+CANAL+
+</div>
+
+<ul>
+<li><a href="#">Accueil</a></li>
+<li><a href="#">Offres</a></li>
+<li><a href="#">Chaînes</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Le meilleur du divertissement</h1>
+
+<p>
+Films, Sports, Séries et Streaming
+partout où vous êtes.
+</p>
+
+<button class="btn">
+S'abonner
+</button>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="section-title">
+Nos Offres
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>ACCESS</h3>
+
+<div class="price">
+10$
+</div>
+
+<p>
+Chaînes essentielles et divertissement
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>EVASION</h3>
+
+<div class="price">
+25$
+</div>
+
+<p>
+Films, sports et séries premium
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>TOUT CANAL+</h3>
+
+<div class="price">
+50$
+</div>
+
+<p>
+Expérience complète Canal+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2 class="section-title">
+Chaînes Populaires
+</h2>
+
+<div class="channels">
+
+<div class="channel">
+CANAL+ SPORT
+</div>
+
+<div class="channel">
+CANAL+ CINEMA
+</div>
+
+<div class="channel">
+CANAL+ SERIES
+</div>
+
+<div class="channel">
+CANAL+ ACTION
+</div>
+
+<div class="channel">
+CANAL+ KIDS
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Canal+ Demo Site
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
